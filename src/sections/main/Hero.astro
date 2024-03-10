@@ -4,17 +4,24 @@ import DownloadButton from '@/components/main/DownloadButton.astro';
 ---
 
 
-<div class="pt-5 pb-40 bg-blurple">
-    
-    <h1 class="font-bold text-center text-[3.62rem] text-white">IMAGINE A PLACE</h1>
-    <p class="text-center max-w-[48.75rem] my-0 mx-auto pt-4 text-white">
+<div class="pt-5 pb-40">
+    <div class="z-0 max-w-[50rem] grid-cols-560-auto grid-rows-auto flex-col justify-center items-center mx-auto relative">
+        <h1 class="font-bold text-center text-[3.62rem] text-white font-[GintoNord]">IMAGINE A PLACE...</h1>
+        <p class="text-center max-w-[48.75rem] my-0 mx-auto pt-4 text-white">
         ...where you can belong to a school club, a gaming group, or a worldwide
         art community. Where just you and a handful of friends can spend time
         together. A place that makes it easy to talk every day and hang out more
         often.
-    </p>
-    <div class="justify-center flex items-center flex-wrap ">
-        <DownloadButton/> <OpenButton/>
+        </p>
     </div>
-
+    
+    <div class="justify-center flex items-center flex-wrap ">
+        <aside>
+            <DownloadButton/> <OpenButton/>
+        </aside>
+    </div>
+    
+    <img src="" alt="">
+    <img src="/images/HeroImageOne.svg" class="left-0 absolute">
+    <img src="/images/HeroImageTwo.svg" class="right-0 absolute">
 </div>
