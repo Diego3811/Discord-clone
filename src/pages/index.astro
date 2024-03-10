@@ -1,12 +1,14 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import NavBar from '@/components/NavBar.astro';
-import Hero from '@/components/Hero.astro'
+import NavBar from '@/sections/main/NavBar.astro';
+import Hero from '@/sections/main/Hero.astro'
 ---
 
 <Layout title="Discord | Your Place to Talk and Hang Out">
 	<main>
+		<div class="bg-blurple">
 		<NavBar/>
 		<Hero/>
+		</div>
 	</main>
 </Layout>

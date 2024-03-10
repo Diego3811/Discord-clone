@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-                blurple: '#5865f2'
+                blurple: '#404eed'
             },
 		},
 	},
