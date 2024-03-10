@@ -3,14 +3,44 @@ import Layout from '@/layouts/Layout.astro';
 import NavBar from '@/sections/main/NavBar.astro';
 import Hero from '@/sections/main/Hero.astro'
 import About from '@/sections/main/About.astro'
+import AboutInfoOne from '@/components/AboutInfoOne.astro'
+import AboutInfoTwo from '@/components/AboutInfoTwo.astro'
+import AboutInfoThree from '@/components/AboutInfoThree.astro'
+import Footer from '@/sections/main/Footer.astro'
+
+
 ---
 
 <Layout title="Discord | Your Place to Talk and Hang Out">
 	<main>
+		
+
 		<div class="bg-blurple">
-		<NavBar/>
-		<Hero/>
+			<NavBar/>
+			<Hero/>
 		</div>
-		<About/>
+
+		<section class="bg-white">
+			<About>
+				<AboutInfoOne/>
+			</About>
+		</section>
+
+		<section class="bg-grayprimary">
+			<About>
+				<AboutInfoTwo/>
+			</About>
+		</section>
+
+		<section class="bg-white">
+			<About>
+				<AboutInfoThree/>
+			</About>
+		</section>
+		
+		<footer>
+			<Footer/>
+		</footer>
+
 	</main>
 </Layout>

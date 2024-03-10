@@ -1,23 +1,17 @@
+---
+import AboutOne from '@/components/AboutInfoOne.astro'
+import { addAnimation } from '@/lib/Animation';
+---
+    <div class="py-[7.5rem]">
+        <div class="w-11/12 max-w-[73.75rem] m-auto ">
+            <div class="grid grid-flow-row grid-cols-12 gap-x-5 gap-y-4 grid-rows-auto justify-items-start align-content-start items-center">
 
-<section>
-    <div class="hero-container pt-24 pb-40">
-        <div class="w-11/12 max-w-[73.75rem] m-auto">
-            <div class="flex justify-between items-center">
-
-                <div class="">
-                    <img src="/images/AboutImage.svg" loading="lazy" alt="Create an invite-only place where you belong">
-                </div>
-
-                <div>
-                    <h3 class="mb-6 text-5xl font-bold">
-                        Create an invite-only place where you belong
-                    </h3>
-                    <div class="mt-6 text-xl">
-                        Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.
-                    </div>
-                </div>
-
+                <slot/>
+                <script>
+                    export function mount() {
+                      addAnimation('element-to-animate', 'animate-fade-in-up');
+                    }
+                </script>
             </div>
         </div>
     </div>
-</section>
