@@ -1,17 +1,11 @@
 ---
 import AboutOne from '@/components/AboutInfoOne.astro'
-import { addAnimation } from '@/lib/Animation';
 ---
     <div class="py-[7.5rem]">
         <div class="w-11/12 max-w-[73.75rem] m-auto ">
             <div class="grid grid-flow-row grid-cols-12 gap-x-5 gap-y-4 grid-rows-auto justify-items-start align-content-start items-center">
 
-                <slot/>
-                <script>
-                    export function mount() {
-                      addAnimation('element-to-animate', 'animate-fade-in-up');
-                    }
-                </script>
+                <slot/> 
             </div>
         </div>
     </div>

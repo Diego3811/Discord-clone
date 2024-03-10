@@ -6,16 +6,15 @@ import About from '@/sections/main/About.astro'
 import AboutInfoOne from '@/components/AboutInfoOne.astro'
 import AboutInfoTwo from '@/components/AboutInfoTwo.astro'
 import AboutInfoThree from '@/components/AboutInfoThree.astro'
+import EndAbout from '@/sections/main/EndAbout.astro'
 import Footer from '@/sections/main/Footer.astro'
-
-
 ---
 
 <Layout title="Discord | Your Place to Talk and Hang Out">
 	<main>
 		
 
-		<div class="bg-blurple">
+		<div class="bg-blueprimary">
 			<NavBar/>
 			<Hero/>
 		</div>
@@ -37,10 +36,36 @@ import Footer from '@/sections/main/Footer.astro'
 				<AboutInfoThree/>
 			</About>
 		</section>
-		
-		<footer>
-			<Footer/>
-		</footer>
 
+		<section>
+			<EndAbout/>
+		</section>
+		
 	</main>
+
+	<footer>
+	<Footer/>
+    </footer>
+
 </Layout>
+
+<script>
+	// Scroll controller
+function handleScroll() {
+  const scrollPosition = window.scrollY;
+  const elementsToAnimate = document.querySelectorAll('.element-to-animate');
+
+// Add the animation class if they are in the viewport
+  elementsToAnimate.forEach((element) => {
+    const elementPosition = element.getBoundingClientRect();
+
+    if (elementPosition.top < window.innerHeight) {
+      element.classList.add('animate-fade-in-up');
+    }
+  });
+}
+
+// Add Listener for scroll event
+window.addEventListener('scroll', handleScroll);
+</script>
+
