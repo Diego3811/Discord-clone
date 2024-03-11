@@ -1,15 +1,24 @@
-<section>
-    <div class="justify-center text-center object-center grid grid-cols-5">
-        <div class="justify-center items-center object-centerz-0 max-w-[50rem] grid-cols-560-auto grid-cols-auto flex-row  mx-auto relative">
-            <h1 class="font-bold text-white">GET DISCORD FOR ANY DEVICE</h1>
-            <p class="col-start-5 col-end-5 row-start-4 row-end-5 " >An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on mobile.</p>
-            <div>
-                <button></button>
-                <p></p>
-            </div>
-            <div>
-                <img src="/images/HeroDownloadImg.svg" alt="">
+---
+import DownloadButton from "@/components/main/DownloadButtonTwo.astro"
+---
+
+<div class="flex flex-col justify-center items-center mt-0 pt-[11.125rem] pb-[7.5rem]">
+
+    <div class="flex gap-y-10 gap-x-10 justify-start items-center relative w-11/12 max-w-[73.75rem] m-auto flex-row self-start mx-auto">
+        
+        <div class="flex w-full max-w-[43.75rem] flex-col self-start justify-center relative">
+            <h1 class="text-white font-bold text-[3.125rem] font-[GintoNord] uppercase mb-6 leading-[100%] animate-fade-in-up">GET DISCORD FOR ANY DEVICE</h1>
+            <p class="mx-auto text-xl font-normal leading-7 text-white mb-5 animate-fade-in-up">An adventure awaits. Hang out with your friends on our desktop app and keep the conversation going on mobile.</p>
+            <div class="justify-start gap-x-6 gap-y-6 flex-wrap items-center flex relative w-full no-underline">
+               <DownloadButton/>
+               <p class="ml-0 my-0 text-white text-center font-normal animate-fade-in-up">Windows 7 or higher</p>
             </div>
         </div>
+
+        <div class="self-center w-full">
+            <img src="/images/HeroDownloadImage.svg" alt="" class="w-full inline-block relative animate-fade-in-up">
+        </div>
+
     </div>
-</section>
+
+</div>
